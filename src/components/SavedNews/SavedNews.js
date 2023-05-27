@@ -1,10 +1,14 @@
 import './SavedNews.css';
-import React from 'react';
+import React, { useContext } from 'react';
+import NewsCardList from '../NewsCardList/NewsCardList';
+import { SavedNewsArticle } from '../../contexts/ArticleContext';
 
-const SavedNews = () => {
+const SavedNews = (props) => {
+  const articles = useContext(SavedNewsArticle);
 
   return (
-    <div className='saved-news'>
+    <div className="saved-news">
+      <NewsCardList savedNewsArticle={articles} removeCard={props.removeCard} />
     </div>
   );
 };

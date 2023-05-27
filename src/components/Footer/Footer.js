@@ -6,51 +6,51 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <footer className='footer'>
-      <p className='footer__copyright'>
+    <footer className="footer">
+      <p className="footer__copyright">
         © {new Date().getFullYear()} Supersite, Powered by News API
       </p>
-      <div className='footer__links'>
-        <div className='footer__links-left'>
-          <Link to='/' className='footer__link'>
+      <nav className="footer__links">
+        <div className="footer__links-left">
+          <Link to="/" className="footer__link">
             Home
           </Link>
           <a
-            target='_blank'
-            rel='noopener noreferrer'
-            className='footer__link'
-            href='https://practicum.com/en-isr/?gclid=Cj0KCQjwwfiaBhC7ARIsAGvcPe44AsQbWf8dlUVIisrh7weSDwwEYcPtwS8VgCjUM3fyGoFcVCfI5G4aAhBqEALw_wcB'
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer__link"
+            href="https://practicum.com/en-isr/?gclid=Cj0KCQjwwfiaBhC7ARIsAGvcPe44AsQbWf8dlUVIisrh7weSDwwEYcPtwS8VgCjUM3fyGoFcVCfI5G4aAhBqEALw_wcB"
           >
             Practicum
           </a>
         </div>
-        <div className='footer__links-right'>
+        <div className="footer__links-right">
           <a
-            target='_blank'
-            rel='noopener noreferrer'
-            href='https://github.co/yonatanreed'
-            className='footer__link'
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.co/yonatanreed"
+            className="footer__link"
           >
             <img
               src={githubLogo}
-              alt='Github logo'
-              className='footer__github-logo'
+              alt="Github logo"
+              className="footer__github-logo"
             />
           </a>
           <a
-            href='https://www.facebook.com/Practicum-Israel-100130606032857/'
-            target='_blank'
-            rel='noopener noreferrer'
-            className='footer__link'
+            href="https://www.facebook.com/Practicum-Israel-100130606032857/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer__link"
           >
             <img
               src={facebookLogo}
-              alt='Facebook logo'
-              className='footer__facebook-logo'
+              alt="Facebook logo"
+              className="footer__facebook-logo"
             />
           </a>
         </div>
-      </div>
+      </nav>
     </footer>
   );
 }
